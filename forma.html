@@ -2,74 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formas</title>
-    <link href="CSS/mansStils.css" rel="stylesheet" type="text/css">
+    <link href="jakovcss.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-}
-
-h1 {
-    color: #d63384; 
-}
-
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-p, div, label {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #444; /* Tumšāks teksts */
-}
-
-input[type="text"], input[name="datums"], input[name="rez"] {
-    width: 90%;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #222; /* Tumšāks teksts ievadlaukos */
-    background-color: #fff;
-}
-
-input[type="button"], input[type="reset"], button {
-    background-color: #ff69b4;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-input[type="button"]:hover, input[type="reset"]:hover, button:hover {
-    background-color: #ff1493;
-}
-
-button a {
-    text-decoration: none;
-    color: white;
-}
-
-button {
-    margin-top: 20px;
-}
-    </style>
-    <h1>Formas un ievadlauku piemērs</h1>
+<header>
+</header>
+    <h1 class="f">Formas un ievadlauku piemērs</h1>
     <form>
         <p>Šodienas datums <input name="datums"></p>
         <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
@@ -80,26 +19,21 @@ button {
         </p>
     </form>
     <form>
-        <div>1.skaitlis<input type="text" name="sk1"> </div>
-        <div>2.skaitlis<input type="text" name="sk2"> </div>
+        <div>1.skaitlis <input type="number" name="sk1" value="0"> </div>
         <div>
-            <input value="+" name="sask" onclick="rez.value=parseInt(sk1.value)+parseInt(sk2.value)" type="button">
-        
-            <input value="-" name="atnem" onclick="rez.value=sk1.value-sk2.value" type="button">
-        
-            <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
-       
-            <input value="/" name="dalis" onclick="rez.value=sk1.value/sk2.value" type="button">
-            
-            <input value="Clear" name="notir" onclick="rez.value=''; sk1.value=''; sk2.value='';"  type="button">
+            <input value="+" name="add" onclick="rez.value=parseFloat(sk1.value) + parseFloat(sk2.value)" type="button">
+            <input value="-" name="subtract" onclick="rez.value=parseFloat(sk1.value) - parseFloat(sk2.value)" type="button">
+            <input value="×" name="multiply" onclick="rez.value=parseFloat(sk1.value) * parseFloat(sk2.value)" type="button">
+            <input value="÷" name="divide" onclick="rez.value=parseFloat(sk1.value) / parseFloat(sk2.value)" type="button">
         </div>
-        
+        <div>2.skaitlis <input type="number" name="sk2" value="0"> </div>
         <hr>
-        <div>Rezultāts<input name="rez"> </div>
-        
-    </form>
-    <br><br>
-    <button><a href='index.html'>Atpakaļ</a></button>
-    
+        <div>Rezultāts <input name="rez" readonly> </div>
+        <div>
+            <input value="RESET" type="button" onclick="sk1.value='0'; sk2.value='0'; rez.value='';">
+        </div>
+    </form>  <br> <br> <button><a href='jakovpage.html'>Atpakaļ</a></button>
+	<footer>
+	</footer>
 </body>
 </html>
