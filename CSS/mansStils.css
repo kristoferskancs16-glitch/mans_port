@@ -1,52 +1,86 @@
 /* =============================
-   PAMATA STILS
+   RESET & BASE
    ============================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Lato", sans-serif;
-    color: #222;
-    margin-top: 90px;
-    background-color: #f5f5f5;
-    line-height: 1.6;
-    letter-spacing: 0.3px;
+    background-color: #fff;
+    color: #111;
+    margin-top: 80px;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* =============================
    NAVIGĀCIJA
    ============================= */
 .w3-bar {
-    border-bottom: 1px solid #eee !important;
+    background-color: #fff !important;
+    border-bottom: 1px solid #e8e8e8 !important;
+    height: 60px;
 }
 
 .w3-bar a, .w3-bar button {
-    font-size: 14px !important;
-    letter-spacing: 0.5px;
-    color: #222 !important;
-    font-weight: 600;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+    color: #111 !important;
+    opacity: 0.6;
+    transition: opacity 0.2s ease !important;
+}
+
+.w3-bar a:hover, .w3-bar button:hover {
+    opacity: 1;
+    background-color: transparent !important;
 }
 
 .w3-bar a:first-child {
-    font-size: 16px !important;
-    font-weight: 700 !important;
-    letter-spacing: 1px;
+    opacity: 1;
+    font-size: 15px !important;
+    letter-spacing: 2px !important;
 }
 
 .w3-dropdown-content {
-    border: 1px solid #eee !important;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
-    border-radius: 8px !important;
-    overflow: hidden;
+    background: #fff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06) !important;
+    min-width: 160px;
+}
+
+.w3-dropdown-content a {
+    font-size: 12px !important;
+    padding: 12px 20px !important;
+    color: #111 !important;
 }
 
 /* =============================
-   HERO SEKCIJA
+   HERO
    ============================= */
 h1 {
-    font-size: 52px;
+    font-size: 56px;
     font-weight: 700;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
+    line-height: 1.1;
     color: #111;
     text-align: center;
-    margin-bottom: 8px;
+    padding: 64px 20px 8px;
+}
+
+.font-color-white p,
+.hero-subtitle {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    margin-top: 8px;
 }
 
 /* =============================
@@ -55,103 +89,91 @@ h1 {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 16px;
-    margin-top: 24px;
+    gap: 12px;
+    margin: 32px auto 64px;
     flex-wrap: wrap;
 }
 
 .button-link {
-    background-color: #111;
-    color: #fff;
-    padding: 14px 32px;
-    text-decoration: none;
-    font-size: 14px;
+    display: inline-block;
+    padding: 11px 28px;
+    font-size: 12px;
     font-weight: 700;
-    border-radius: 50px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-decoration: none;
+    color: #fff;
+    background-color: #111;
+    border-radius: 2px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .button-link:hover {
     background-color: #333;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    transform: translateY(-1px);
 }
 
 .button-link:active {
     transform: translateY(0);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 /* =============================
-   KARTES / PANEĻI
+   SATURS
    ============================= */
-.w3-panel {
-    background-color: #fff !important;
-    border-radius: 16px !important;
-    padding: 32px !important;
-    margin: 24px auto !important;
-    max-width: 860px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06) !important;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.w3-panel:hover {
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1) !important;
-    transform: translateY(-2px);
-}
-
+.w3-panel,
 .w3-white {
     background-color: #fff !important;
-    border-radius: 16px;
-    padding: 32px;
-    margin: 24px auto;
-    max-width: 860px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border-radius: 0 !important;
+    padding: 48px !important;
+    margin: 0 auto 2px !important;
+    max-width: 800px;
+    box-shadow: none !important;
+    border-bottom: 1px solid #f0f0f0 !important;
 }
 
 /* =============================
    VIRSRAKSTI
    ============================= */
 h3 {
-    font-size: 22px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: -0.5px;
-    color: #111;
-    margin-bottom: 8px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #f0f0f0;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 16px;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
-    color: #333;
-    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+    color: #111;
+    margin: 24px 0 8px;
 }
 
 p {
-    color: #666;
+    color: #555;
     font-size: 15px;
-    margin-bottom: 16px;
+    max-width: 560px;
+    margin-bottom: 20px;
 }
 
 /* =============================
    ATTĒLI UN VIDEO
    ============================= */
 img, video {
-    border: 1px solid #eee;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 12px;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    filter: grayscale(8%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    box-shadow: none;
 }
 
 img:hover, video:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+    filter: grayscale(0%);
+    transform: scale(1.01);
 }
 
 /* =============================
@@ -163,8 +185,10 @@ ul {
     margin: 0;
 }
 
-ul li {
-    margin-bottom: 24px;
+ul li + li {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid #f0f0f0;
 }
 
 /* =============================
@@ -173,8 +197,8 @@ ul li {
 :target::before {
     content: "";
     display: block;
-    height: 100px;
-    margin-top: -100px;
+    height: 80px;
+    margin-top: -80px;
 }
 
 /* =============================
