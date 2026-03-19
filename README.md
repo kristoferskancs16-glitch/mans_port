@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # repoz
 =======
 # Porfolio
 rydejhrsh
->>>>>>> origin/master
+# mans_port
