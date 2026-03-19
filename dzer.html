@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="jakovcss.css"> 
+</head>
+<body>
+<header>
+</header>
+<script>
+function maksa(){
+    let dz = document.getElementsByName('drink');
+    let cena = 0;
+    for(i = 0; i < dz.length; i++) {
+       if(dz[i].checked) {
+           cena = dz[i].value;
+           
+       }
+    }
+    document.getElementById("cena").innerHTML = "Cena: " + cena;
+ }   
+</script>
+<p class="f">Izvēlies dzērienu:</p>
+<form>
+  <input type="radio" id="kafija" name="drink" value="3.60">
+  <label for="kafija">kafija</label><br>
+  <input type="radio" id="sula" name="drink" value="2.50">
+  <label for="sula">sula</label><br>
+  <input type="radio" id="kakao" name="drink" value="3.20">
+  <label for="kakao">kakao</label><br><br>
+  <input type="button" id="poga" value="jāmaksā" onclick="maksa()">
+  <span id="cena"></span>
+</form> 
+<br><br><button><a href='jakovpage.html'>Atpakaļ</a></button>
+<footer>
+</footer>
+</body>
+
+</html>
