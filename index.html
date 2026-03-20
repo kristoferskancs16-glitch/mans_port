@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+
 <html lang="en">
 <head>
     <title>Mans Portfolio.</title>
@@ -12,55 +13,100 @@
 
 <body>
 
-    
-    
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-pink w3-card">
+  <div class="w3-bar w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red">Sākums</a>
-    <a href="#word" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">Teksta apstrāde</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Sākums</a>
+    <a href="#word" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Teksta apstrāde</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-button w3-padding-large">Attēlu apstrāde <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-pink">
-        <a href="#rastr" class="w3-bar-item w3-button w3-hover-pale-red">Rastrgrafika</a>
-        <a href="#vektor" class="w3-bar-item w3-button w3-hover-pale-red">Vektorgrafika</a>
+      <div class="w3-dropdown-content w3-bar-block">
+        <a href="#rastr" class="w3-bar-item w3-button">Rastrgrafika</a>
+        <a href="#vektor" class="w3-bar-item w3-button">Vektorgrafika</a>
       </div>
     </div>
-    <a href="#model" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">3D Modelēšana</a>
-    <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">Video</a>
-    <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">Izklājlapas</a>
-    <a href="otrais.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-pale-red">Individuālā tēma</a>
-
-    
-    
+    <a href="#model" class="w3-bar-item w3-button w3-padding-large w3-hide-small">3D Modelēšana</a>
+    <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Video</a>
+    <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Izklājlapas</a>
+    <a href="otrais.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Individuālā tēma</a>
   </div>
 </div>
 
-<div id="navDemo" class="w3-bar-block w3-pink w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#word" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red" onclick="myFunction()">Teksta apstrāde</a>
-  <a href="#gimp" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red" onclick="myFunction()">Attēlu apstrāde</a>
-  <a href="#model" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red" onclick="myFunction()">3D Modelēšana</a>
-  <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red" onclick="myFunction()">Video</a>
-  <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red" onclick="myFunction()">Izklājlapas</a>
-  <a href="otrais.html" class="w3-bar-item w3-button w3-padding-large w3-hover-pale-red" onclick="myFunction()">Individuālā tēma</a>
-
-  
-  
+<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:60px;">
+  <a href="#word" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Teksta apstrāde</a>
+  <a href="#gimp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Attēlu apstrāde</a>
+  <a href="#model" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">3D Modelēšana</a>
+  <a href="#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Video</a>
+  <a href="#excel" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Izklājlapas</a>
+  <a href="otrais.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Individuālā tēma</a>
 </div>
 
-
-<div>
-    <div class="font-color-white">
-                
+<!-- Hero -->
+<div style="text-align:center; padding: 64px 20px 0;">
     <h1>Mans portfolio</h1>
-
     <div class="button-container">
         <a href="dzer.html" class="button-link">Dzer</a>
         <a href="dzerdaudz.html" class="button-link">Dzer Daudz</a>
         <a href="forma.html" class="button-link">Forma</a>
+        
+           <a href="skola.html">skola</a>
+           <a href="baiti.html">baiti</a>
+    </div>
+</div>
+
+<!-- Saturs -->
+<div style="max-width: 800px; margin: 0 auto; padding: 0 20px 80px;">
+
+    <div id="word" class="w3-panel">
+        <h3>Word</h3>
+        <p>Mēs izmantojām Word lai noformētu un sakartotu textu.</p>
+        <img src="images/word.jpg" alt="word teksts" width="300">
+        <br>
+        <a href="files/turisms.docx" class="button-link" download style="margin-top: 16px;">
+            Lejupielādēt Word failu
+        </a>
     </div>
 
+    <div id="gimp" class="w3-panel">
+        <h3>GIMP</h3>
+        <p>Mēs programā GIMP apstrādājām attēlus un taisījām savus GIF, kā arī taisījām vektorgrafikus.</p>
+        <ul>
+            <li>
+                <h4 id="rastr">Mans GIF:</h4>
+                <img src="images/baneris.gif" alt="gif" width="300">
+            </li>
+            <li style="margin-top: 20px;">
+                <h4 id="vektor">Mūsu logo piedāvājums:</h4>
+                <img src="images/Kūk_logo.svg" alt="logo" width="300">
+            </li>
+        </ul>
+    </div>
+
+    <div id="model" class="w3-panel">
+        <h3>3D modelēšana</h3>
+        <p>Mēs šogad modelējām programā Tinkercad, kur mums bija jāuzdizainē no puzles gabaliņiem kubs.</p>
+        <img src="images/3d2.png" alt="puzles gabalins" width="300">
+    </div>
+
+    <div id="video" class="w3-panel">
+        <h3>Video apstrāde</h3>
+        <p>Izmantojot uzfilmēto no 3D modelēšanas tēmas mēs taisījām video programā Clipchamp.</p>
+        <video width="400" controls>
+            <source src="images/video2.mp4" type="video/mp4">
+            <source src="images/video2.ogg" type="video/ogg">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+
+    <div id="excel" class="w3-panel">
+        <h3>Excel</h3>
+        <p>Šogad Excel programā mēs apguvām dažādas funkcijas kā: IF; SUM; AVERAGE; utt.</p>
+        <img src="images/excel.png" alt="grafiks" width="300">
+        <br>
+        <a href="files/Darbs_ar_MsExcel4.xlsx" class="button-link" download style="margin-top: 16px;">
+            Lejupielādēt Excel failu
+        </a>
     </div>
     
     <div id="word">
@@ -117,7 +163,6 @@
 </div>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
 
@@ -125,34 +170,31 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-
-
 </script>
 
 </body>
 </html>
+

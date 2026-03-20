@@ -1,15 +1,239 @@
+/* =============================
+   RESET & BASE
+   ============================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Lato", sans-serif;
+    background-image: url('../images/backgroundimg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    margin-top: 80px;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
     color: #222;
     margin-top: 90px;
     background-color: #f5f5f5;
 }
 
+/* =============================
+   NAVIGĀCIJA
+   ============================= */
+.w3-bar {
+    background-color: rgba(0,0,0,0.85) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+    height: 60px;
+}
+
+.w3-bar a, .w3-bar button {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    opacity: 1;
+    transition: background-color 0.2s ease !important;
+}
+
+.w3-bar a:hover, .w3-bar button:hover {
+    background-color: rgba(255,255,255,0.1) !important;
+    color: #fff !important;
+}
+
+.w3-bar a:first-child {
+    font-size: 15px !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
+}
+
+.w3-dropdown-content {
+    background: rgba(0,0,0,0.95) !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3) !important;
+    min-width: 160px;
+}
+
+.w3-dropdown-content a {
+    font-size: 12px !important;
+    padding: 12px 20px !important;
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+/* =============================
+   HERO
+   ============================= */
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    color: #fff;
+    text-align: center;
+    padding: 64px 20px 8px;
+}
+
+.font-color-white p,
+.hero-subtitle {
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    margin-top: 8px;
+}
+
+/* =============================
+   POGAS
+   ============================= */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 32px auto 64px;
+    flex-wrap: wrap;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 11px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 2px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button-link:hover {
+    background-color: rgba(255,255,255,0.25);
+    transform: translateY(-1px);
+}
+
+.button-link:active {
+    transform: translateY(0);
+}
+
+/* =============================
+   SATURS
+   ============================= */
+.w3-panel,
+.w3-white {
+    background-color: rgba(0,0,0,0.5) !important;
+    border-radius: 8px !important;
+    padding: 48px !important;
+    margin: 0 auto 16px !important;
+    max-width: 800px;
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+/* =============================
+   VIRSRAKSTI
+   ============================= */
+h3 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #fff;
+    margin: 24px 0 8px;
+}
+
+p {
+    color: rgba(255,255,255,0.8);
+    font-size: 15px;
+    max-width: 560px;
+    margin-bottom: 20px;
+}
+
+/* =============================
+   ATTĒLI UN VIDEO
+   ============================= */
+img, video {
+    display: block;
+    border: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: none;
+}
+
+img:hover, video:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
+}
+
+/* =============================
+   SARAKSTS
+   ============================= */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li + li {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* =============================
+   ANCHOR OFFSET
+   ============================= */
+:target::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin-top: -80px;
+}
+
+/* =============================
+   SLIDESHOW
+   ============================= */
 .mySlides {
     display: none;
 }
 
-img, video {
+/* =============================
+   MOBILAIS MENU
+   ============================= */
+#navDemo {
+    background-color: rgba(0,0,0,0.85) !important;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+#navDemo a {
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+}
+
+#navDemo a:hover {
+    background-color: rgba(255,255,255,0.1) !important;
+}
     border: 2px solid #e0e0e0;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
